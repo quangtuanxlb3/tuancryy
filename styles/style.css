@@ -1,0 +1,363 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/flowers/f1.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.banner-content {
+    max-width: 700px;
+    padding: 0 20px;
+}
+  
+.banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+  
+.btn-shop-now {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+  
+.btn-shop-now:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 107, 107, 0.4);
+}
+  
+h2, h3 {
+    color: #444;
+    margin-bottom: 20px;
+    position: relative;
+}
+  
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #ff6b6b;
+    bottom: -8px;
+    left: 0;
+}
+  
+.left-aside h3, .right-aside h3 {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+  
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+  
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    position: relative;
+}
+  
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+  
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+  
+.product-card h3 {
+    padding: 15px 15px 0 15px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+  
+.product-card h3::after {
+    display: none;
+}
+  
+.product-description {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+  
+.product-price {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+.current-price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ff6b6b;
+}
+  
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+  
+.btn-add-cart {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #f8f8f8;
+    border: none;
+    color: #ff6b6b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-top: 1px solid #eee;
+}
+  
+.btn-add-cart:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+  
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+  
+.product-badge.new {
+    background-color: #4caf50;
+}
+  
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+  
+.benefit-item {
+    padding: 30px 15px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+  
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+  
+.benefit-item i {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+  
+.benefit-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+  
+.benefit-item h3::after {
+    display: none;
+}
+  
+.benefit-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+  
+.promotion {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+  
+.promotion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/flowers/f1.png') no-repeat right center;
+    background-size: contain;
+    opacity: 0.2;
+}
+  
+.promo-content {
+    position: relative;
+    z-index: 1;
+}
+  
+.promotion h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+  
+.promotion h2::after {
+    background-color: white;
+}
+  
+.promotion p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+  
+.promotion .btn-shop-now {
+    background-color: white;
+    color: #ff6b6b;
+    margin-top: 15px;
+}
+  
+.promotion .btn-shop-now:hover {
+    background-color: #f8f8f8;
+}
+  
+.testimonials {
+    margin-top: 30px;
+}
+  
+.testimonial {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+  
+.stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+  
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+  
+.testimonial span {
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    color: #666;
+}
+  
+.footer-about {
+    grid-column: span 1;
+}
+  
+.footer-about p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+  
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+  
+.social-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+.social-icons i:hover {
+    color: #ff9a9e;
+    transform: translateY(-3px);
+}
+  
+footer h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+  
+footer i {
+    margin-right: 10px;
+}
+  
+.copyright {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 5%;
+    font-size: 0.9rem;
+}
+  
+@media (max-width: 992px) {
+    .benefits {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media (max-width: 768px) {
+    .banner h1 {
+      font-size: 2rem;
+    }
+    
+    .banner p {
+      font-size: 1rem;
+    }
+    
+    .benefits {
+      grid-template-columns: 1fr;
+    }
+    
+    .product-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media (max-width: 576px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+}
